@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    android:background="#263238">
+
+    <!-- 左边：勾图标（白色） -->
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_action_check_white"
+        android:contentDescription="完成"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <!-- 中间：标题（白色） -->
+    <TextView
+        android:id="@+id/tv_actionmode_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="4dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- 右边：垃圾桶（白色） -->
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_action_delete_white"
+        android:contentDescription="删除"
+        android:background="?android:attr/selectableItemBackground" />
+
+</LinearLayout>

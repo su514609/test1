@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_action_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:cacheColorHint="#FFFFFF"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" />
+
+    <!-- 自定义 ActionMode 栏，默认隐藏 -->
+    <LinearLayout
+        android:id="@+id/custom_actionmode_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="#263238"
+        android:visibility="gone">
+
+        <!-- 左边：勾图标（白色） -->
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_action_check_white"
+            android:contentDescription="完成"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- 中间：标题（白色） -->
+        <TextView
+            android:id="@+id/tv_actionmode_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+
+        <!-- 右边：垃圾桶（白色） -->
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_action_delete_white"
+            android:contentDescription="删除" />
+
+    </LinearLayout>
+
+</FrameLayout>
